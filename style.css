@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Container Styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  max-width: 60%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 2rem auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  font-size: 1.5rem;
+}
