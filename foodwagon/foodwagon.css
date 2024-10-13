@@ -1,0 +1,58 @@
+img {
+  vertical-align: middle;
+}
+
+.text-gradient {
+  background: linear-gradient(50deg, #fb3c00, #ffb800);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.input-group-icon {
+  position: relative;
+}
+
+.input-group-icon .input-box {
+  padding-left: 2.8rem;
+  vertical-align: middle;
+}
+
+.input-group-icon .input-box-icon {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  color: #eee;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.img-landing-banner {
+  overflow: hidden;
+  transform: translateY(-3rem);
+  margin-bottom: -8rem;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    -webkit-transform 0.4s ease;
+  position: relative;
+  display: block;
+}
+
+@media (min-width: 1540px) {
+  .img-landing-banner {
+    margin-bottom: -22rem;
+  }
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #eee;
+}
+
+.nav-link.active {
+  color: #f17228;
+  background-color: rgba(241, 114, 40, 0.15);
+  border-color: rgba(0, 0, 0, 0);
+}

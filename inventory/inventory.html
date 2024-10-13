@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inventory</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="left">
+        <label for="productId">Product ID</label>
+        <input
+          type="text"
+          name="productId"
+          id="productId"
+          placeholder="Enter product ID."
+        />
+        <label for="productName">Product Name</label>
+        <input
+          type="text"
+          name="productName"
+          id="productName"
+          placeholder="Enter product name."
+        />
+        <label for="productPrice">Product Price</label>
+        <input
+          type="text"
+          name="productPrice"
+          id="productPrice"
+          placeholder="Enter product price."
+        />
+        <label for="productQuantity">Product Quantity</label>
+        <input
+          type="text"
+          name="productQuantity"
+          id="productQuantity"
+          placeholder="Enter product quantity."
+        />
+        <input
+          type="submit"
+          name="addProduct"
+          value="Add Product"
+          onclick="addProduct()"
+          id="addProduct"
+        />
+      </div>
+      <div class="right">
+        <table>
+          <colgroup>
+            <col class="id-col" />
+            <col class="name-col" />
+            <col class="price-col" />
+            <col class="quantity-col" />
+            <col class="action-col" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th style="text-align: center">Action</th>
+            </tr>
+          </thead>
+          <tbody id="list"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <img src="avatar_circle.png" alt="avatar" width="50" height="50" />
+      <form action="loginForm" method="POST" onsubmit="saveUser(event)">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          placeholder="Username"
+          onblur="validate(this)"
+          required
+          autocomplete="off"
+        />
+        <p class="error" id="username-error"></p>
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          onblur="validate(this)"
+          required
+          autocomplete="off"
+        />
+        <p class="error" id="email-error"></p>
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          onblur="validate(this)"
+          required
+          autocomplete="off"
+        />
+        <p class="error" id="password-error"></p>
+
+        <label for="re_password">Re-enter Password</label>
+        <input
+          type="password"
+          name="re_password"
+          placeholder="Password"
+          onblur="validate(this)"
+          required
+          autocomplete="off"
+        />
+        <p class="error" id="re_password-error"></p>
+
+        <label for="mobile">Mobile Number</label>
+        <input
+          type="text"
+          name="mobile"
+          placeholder="Mobile Number"
+          onblur="validate(this)"
+          required
+          autocomplete="off"
+        />
+        <p class="error" id="mobile-error"></p>
+
+        <div class="radio-group">
+          <label>Gender: </label>
+          <input
+            type="radio"
+            name="gender"
+            value="Male"
+            required
+            onblur="validate(this)"
+          />
+          <label for="male">Male</label>
+          <input id="female" type="radio" name="gender" value="Female" />
+          <label for="female">Female</label>
+          <input id="other" type="radio" name="gender" value="Other" />
+          <label for="other">Other</label>
+        </div>
+        <p class="error" id="gender-error"></p>
+
+        <label for="dateofbirth">Date of Birth</label>
+        <input
+          type="date"
+          name="dateofbirth"
+          id="dateofbirth"
+          max=""
+          onblur="validate(this)"
+        />
+        <p class="error" id="dateofbirth-error"></p>
+
+        <label for="city">Select a city</label>
+        <select name="city" id="city">
+          <optgroup label="Gujarat">
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Gandhinagar">Gandhinagar</option>
+            <option value="Rajkot">Rajkot</option>
+            <option value="Surat">Surat</option>
+          </optgroup>
+          <optgroup label="Maharashtra" style="font-style: italic">
+            <option value="Mumbai">Mumbai</option>
+            <option value="Nagpur">Nagpur</option>
+            <option value="Nashik">Nashik</option>
+            <option value="Pune">Pune</option>
+          </optgroup>
+        </select>
+        <p class="error" id="city-error"></p>
+
+        <input
+          type="submit"
+          name="submit"
+          value="Register"
+          required
+          autocomplete="off"
+        />
+      </form>
+    </div>
+    <script src="registrationForm.js"></script>
+  </body>
+</html>
